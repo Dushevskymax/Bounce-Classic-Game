@@ -5,8 +5,6 @@ import 'package:flame/input.dart';
 import 'package:platformer/game/hud/touch_controls.dart';
 import 'package:platformer/game/model/player_data.dart';
 
-
-
 class SimplePlatformer extends FlameGame with HasTappables, HasCollisionDetection, HasKeyboardHandlerComponents {
   late Image spriteSheet;
   late Image blob;

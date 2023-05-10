@@ -25,11 +25,10 @@ class MainMenu extends StatelessWidget {
                   gameRef.add(GamePlay());
                 },
                 style: ElevatedButton.styleFrom(
-                  fixedSize: Size(250, 80),),
+                  fixedSize: const Size(250, 80),),
                 child: const Text('Start',
                 style: TextStyle(fontSize: 25),
                 ),
-                
               ),
             ),
           ],
