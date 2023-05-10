@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:platformer/game/game.dart';
-import 'package:platformer/game/overlays/leaderboard.dart';
-import 'package:platformer/game/overlays/registration.dart';
-import 'package:platformer/game/overlays/sign_in.dart';
 
 import '../game_play.dart';
 
@@ -24,29 +21,17 @@ class MainMenu extends StatelessWidget {
               width: 120,
               child: ElevatedButton(
                 onPressed: () {
-                  gameRef.overlays.add(SignInMenu.id);
+                  gameRef.overlays.remove(id);
+                  gameRef.add(GamePlay());
                 },
-                child: const Text('Sign In'),
+                style: ElevatedButton.styleFrom(
+                  fixedSize: Size(250, 80),),
+                child: const Text('Start',
+                style: TextStyle(fontSize: 25),
+                ),
+                
               ),
             ),
-            SizedBox(
-              width: 120,
-              child: ElevatedButton(
-                onPressed: () {
-                  gameRef.overlays.add(RegistrationMenu.id);
-                },
-                child: const Text('Register')
-              )
-            ),
-            SizedBox(
-              width: 120,
-              child: ElevatedButton(
-                onPressed: () {
-                  gameRef.overlays.add(Leaderboard.id);
-                },
-                child: const Text('Leaderboard'),
-              ),
-            )
           ],
         )
       )

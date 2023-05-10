@@ -59,7 +59,7 @@
   <object id="156" x="1088" y="768" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="3" name="SpawnPoints">
-  <object id="44" type="Player" gid="1" x="544" y="640" width="32" height="32"/>
+  <object id="44" type="Player" gid="11" x="544" y="640" width="32" height="32"/>
   <object id="45" type="Enemy" gid="12" x="256" y="640" width="32" height="32">
    <properties>
     <property name="Target" type="object" value="165"/>
