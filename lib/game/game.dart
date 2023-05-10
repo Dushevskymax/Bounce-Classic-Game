@@ -6,6 +6,8 @@ import 'package:platformer/game/hud/touch_controls.dart';
 import 'package:platformer/game/model/player_data.dart';
 import 'package:platformer/game/model/user.dart';
 
+
+
 class SimplePlatformer extends FlameGame with HasTappables, HasCollisionDetection, HasKeyboardHandlerComponents {
   late Image spriteSheet;
   late Image blob;
@@ -21,7 +23,7 @@ class SimplePlatformer extends FlameGame with HasTappables, HasCollisionDetectio
     await Flame.device.fullScreen();
     await Flame.device.setLandscape();
 
-    spriteSheet = await images.load('Spritesheet.png');
+    spriteSheet = await images.load('Spritesheet2.png');
     blob = await images.load('blob_stand2.png');
     spikes = await images.load('Spike_Pixel.png');
     star = await images.load('Star.png');
@@ -29,7 +31,7 @@ class SimplePlatformer extends FlameGame with HasTappables, HasCollisionDetectio
     arrows = await images.load('arrows.png');
 
     camera.viewport = FixedResolutionViewport(
-      Vector2(590, 330),
+      Vector2(600, 330),
     );
     
     return super.onLoad();
